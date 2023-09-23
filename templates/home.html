@@ -1,12 +1,10 @@
 {% extends "layout.html" %}
 
 {% block content %}
-<h2 class="text-center">Welcome to ExamEase v2</h2>
-<form action="/" method="post">
-    <div class="form-group">
-        <label for="text">Enter your thoughts:</label>
-        <textarea class="form-control" id="text" name="text" rows="4" required></textarea>
-    </div>
-    <button type="submit" class="btn btn-primary">Submit</button>
+<h1>Welcome to ExamEase</h1>
+<p>Use the tool below to analyze the sentiment of a text:</p>
+<form action="/results" method="post">
+    <textarea name="text" rows="4" cols="50" placeholder="Enter text here..."></textarea><br><br>
+    <input type="submit" value="Analyze">
 </form>
 {% endblock %}

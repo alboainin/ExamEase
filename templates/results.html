@@ -1,14 +1,7 @@
 {% extends "layout.html" %}
 
 {% block content %}
-<h2 class="text-center">Analysis Results</h2>
-<p>Your sentiment appears to be: <strong>{{ prediction }}</strong></p>
-{% if prediction == "Neutral" %}
-<p>Everything seems fine. If you have any concerns, consider seeking further guidance or relaxation techniques.</p>
-{% elif prediction == "Stressed" %}
-<p>It sounds like you're feeling a bit stressed. Remember to take breaks and consider seeking guidance if you need it.</p>
-{% else %}
-<p>It's great that you're feeling relaxed. Keep it up!</p>
-{% endif %}
-<a href="{{ url_for('home') }}" class="btn btn-primary">Go back</a>
+<h1>Analysis Result</h1>
+<p>The analyzed sentiment is: <strong>{{ sentiment }}</strong></p>
+<a href="/">Try another text</a>
 {% endblock %}

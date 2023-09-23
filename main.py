@@ -1,7 +1,7 @@
 import torch
 from transformers import BertTokenizer, BertForSequenceClassification
 
-MODEL_PATH = './models/exam_ease_bert_model'
+MODEL_PATH = './models/exam_ease_bert_model_v2'
 
 # Load the tokenizer and model
 tokenizer = BertTokenizer.from_pretrained(MODEL_PATH)
